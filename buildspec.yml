@@ -17,7 +17,7 @@ phases:
  build:
    commands:
      - echo Build started on `date`
-     - echo Amazon CodeBuild sample-project Build  $CODEBUILD_BUILD_NUMBER and $CODEBUILD_WEBHOOK_TRIGGER and $CODEBUILD_SOURCE_VERSION
+     - echo "Amazon CodeBuild sample-project Build  ${CODEBUILD_WEBHOOK_TRIGGER}"
     #  - echo Installing composer deps
     #  - composer install
     #  - echo Logging in to Docker Hub...
