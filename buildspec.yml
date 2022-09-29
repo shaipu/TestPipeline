@@ -20,7 +20,7 @@ phases:
      - echo "Amazon CodeBuild sample-project Build  ${CODEBUILD_WEBHOOK_EVENT}"
     #  - echo Installing composer deps
     #  - composer install
-    #  - echo Logging in to Docker Hub...
+    #  - echo Logging in to Docker Hub....
     #  - echo "$DOCKERHUB_PASS" | docker login --username $DOCKERHUB_USER --password-stdin 
     # #  - docker-compose run --rm codecept run --xml --html # run all the tests
     # #  - docker-compose run --rm codecept run acceptance --xml --html # run only acceptance tests
