@@ -3,4 +3,4 @@ phases:
  build:
    commands:
      - echo Build started on `date`
-     - echo "Amazon CodeBuild sample-project Build  ${CODEBUILD_WEBHOOK_TRIGGER}
+     - echo "Amazon CodeBuild sample-project Build- ${CODEBUILD_WEBHOOK_TRIGGER}
