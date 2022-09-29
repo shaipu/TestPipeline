@@ -1,49 +1,7 @@
 version: 0.2
 phases:
- install:
-   commands:
-    #  - curl -s https://getcomposer.org/installer | php
-    #  - mv  composer.phar /usr/local/bin/composer
-    #  - php --version
-    #  - sed -i 's|acceptance_Site_Url|'"${ACCEPTANCE_SITE_URL}"'|' config.yml
-    #  - sed -i 's|api_Service_Url|'"${API_SERVICE_URL}"'|' config.yml
-    #  - sed -i 's|admin_Username|'"${ADMIN_USERNAME}"'|' config.yml
-    #  - sed -i 's|admin_Password|'"${ADMIN_PASSWORD}"'|' config.yml
-    #  - sed -i 's|basic_Username|'"${BASIC_USERNAME}"'|' config.yml
-    #  - sed -i 's|basic_User_Password|'"${BASIC_USER_PASSWORD}"'|' config.yml
-    #  - sed -i 's|api_UserName|'"${API_USERNAME}"'|' config.yml
-    #  - sed -i 's|api_Password|'"${API_PASSWORD}"'|' config.yml
-    #  - echo -e $ACCEPTANCE_SITE_URL \n$API_SERVICE_URL
  build:
    commands:
      - echo Build started on `date`
      - echo "Amazon CodeBuild sample-project Build  ${CODEBUILD_WEBHOOK_TRIGGER}"
-    #  - echo Installing composer deps
-    #  - composer install
-    #  - echo Logging in to Docker Hub...
-    #  - echo "$DOCKERHUB_PASS" | docker login --username $DOCKERHUB_USER --password-stdin 
-    # #  - docker-compose run --rm codecept run --xml --html # run all the tests
-    # #  - docker-compose run --rm codecept run acceptance --xml --html # run only acceptance tests
-    # #  - docker-compose run --rm codecept run api --xml --html # run only api tests
-    #  - docker-compose run --rm codecept run -g smoke --xml --html # run only smoke suite
-    # # - docker-compose run --rm codecept run -g regression --xml --html # run only regression suite
- post_build: 
-   commands:
-    #  - sleep 10
-    #  - ID=`echo "$CODEBUILD_BUILD_ID" | cut -d ":" -f 2`
-    #  - curl -X POST -H 'Content-type:application/plain-txt' --data '{"text":"\nCodePipeline:'"$CODEBUILD_INITIATOR"'"}' $SLACK_HOOK
-    #  - curl -X POST -H 'Content-type:application/plain-txt' --data '{"text":"\nBuild ID:'"$ID"'"}' $SLACK_HOOK
-    #  - curl -X POST -H 'Content-type:application/plain-txt' --data '{"text":"\nClick on link to check *XML Report*:https://us-east-1.console.aws.amazon.com/codesuite/codebuild/077375377515/testReports/reportGroups/wisetail-checklist-automation-project-TestReports"}' $SLACK_HOOK
-    #  - curl -X POST -H 'Content-type:application/plain-txt' --data '{"text":"\n*Click S3 Bucket URL to download zip file of Test Results*\nhttps://wisetail-qa-automation-reports.s3.amazonaws.com/Reports/'"$ID"'/wisetail-checklist-automation-project"}' $SLACK_HOOK
-# reports:
-#   TestReports: 
-#     files:
-#       - '**/*'
-#     base-directory: 'tests/_output/'
-# artifacts:
-#   files:
-#     - '**.*'
-#   secondary-artifacts:
-#     wisetail_artifacts:
-#       files:
-#         - 'tests/_output/*.*'
+ 
